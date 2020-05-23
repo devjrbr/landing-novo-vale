@@ -20,9 +20,24 @@
 
     <meta content="1200" property="og:image:width">
     <meta content="630" property="og:image:height">
-    <meta content="./assets/Dev_Jr.png" itemprop="image" property="og:image">
-    <link href="./assets/Dev_Jr.png" rel="icon" sizes="16x16" type="image/x-icon">
-    <link href="./assets/Dev_Jr.png" rel="icon" sizes="32x32" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000">
 
     <meta charset="utf-8">
 
@@ -30,14 +45,12 @@
 
     <title> Dev Jr </title>
 
-    <base href="/">
-
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="./assets/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
-    <link href="./assets/fontawesome/css/brands.min.css" rel="stylesheet" />
-    <link href="./assets/fontawesome/css/solid.min.css" rel="stylesheet" />
-    <link href="./assets/fontawesome/css/regular.min.css" rel="stylesheet" />
+    <link href="assets/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="assets/fontawesome/css/brands.min.css" rel="stylesheet" />
+    <link href="assets/fontawesome/css/solid.min.css" rel="stylesheet" />
+    <link href="assets/fontawesome/css/regular.min.css" rel="stylesheet" />
 
 </head>
 
@@ -51,8 +64,8 @@
                 <div class="header-menu">
 
                     <div class="header-logo-container">
-                        <img src="./assets/Logo.png" alt="Dev Jr" />
-                        <img src="./assets/Dev_Jr.png" alt="Dev Jr" />
+                        <img src="assets/Logo.png" alt="Dev Jr" />
+                        <img src="assets/Dev_Jr.png" alt="Dev Jr" />
                     </div>
 
                     <div class="header-options">
@@ -66,7 +79,7 @@
 
                 <button class="header-button">Cadastre-se</button>
 
-                <input style="height: 0; width: 0;" type="checkbox" id="hambuguer">
+                <input style="height: 0; width: 0; display: none;" type="checkbox" id="hambuguer">
 
                 <label for="hambuguer" onclick="openMenu()">
                     <i class="fas fa-bars"></i>
@@ -117,7 +130,7 @@
                     <div class="courses-projects">
                         <div class="course-panel green-color">
                             <div class="course-icon-container">
-                                <img src="./assets/icon.png" />
+                                <img src="assets/icon.png" />
                             </div>
                             <div class="banner">
                                 <h4>Lógica de Programação</h4>
@@ -138,7 +151,7 @@
                     <div class="courses-projects">
                         <div class="course-panel red-color">
                             <div class="course-icon-container">
-                                <img src="./assets/icon.png" />
+                                <img src="assets/icon.png" />
                             </div>
                             <div class="banner">
                                 <h4>Lógica de Programação</h4>
@@ -149,7 +162,8 @@
                                     primis in faucibus.
                                 </p>
 
-                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto Proposto</a>
+                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
+                                    Proposto</a>
                                 <button class="red-color">Iniciar</button>
                             </div>
                         </div>
@@ -158,7 +172,7 @@
                     <div class="courses-projects">
                         <div class="course-panel blue-color">
                             <div class="course-icon-container">
-                                <img src="./assets/icon.png" />
+                                <img src="assets/icon.png" />
                             </div>
                             <div class="banner">
                                 <h4>Lógica de Programação</h4>
@@ -169,7 +183,8 @@
                                     primis in faucibus.
                                 </p>
 
-                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto Proposto</a>
+                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
+                                    Proposto</a>
                                 <button class="blue-color">Iniciar</button>
                             </div>
                         </div>
@@ -178,7 +193,7 @@
                     <div class="courses-projects">
                         <div class="course-panel pink-color">
                             <div class="course-icon-container">
-                                <img src="./assets/icon.png" />
+                                <img src="assets/icon.png" />
                             </div>
                             <div class="banner">
                                 <h4>Lógica de Programação</h4>
@@ -189,7 +204,8 @@
                                     primis in faucibus.
                                 </p>
 
-                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto Proposto</a>
+                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
+                                    Proposto</a>
                                 <button class="pink-color">Iniciar</button>
                             </div>
                         </div>
@@ -198,7 +214,7 @@
                     <div class="courses-projects">
                         <div class="course-panel yellow-color">
                             <div class="course-icon-container">
-                                <img src="./assets/icon.png" />
+                                <img src="assets/icon.png" />
                             </div>
                             <div class="banner">
                                 <h4>Lógica de Programação</h4>
@@ -209,7 +225,8 @@
                                     primis in faucibus.
                                 </p>
 
-                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto Proposto</a>
+                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
+                                    Proposto</a>
                                 <button class="yellow-color">Iniciar</button>
                             </div>
                         </div>
@@ -218,7 +235,7 @@
                     <div class="courses-projects">
                         <div class="course-panel ligth-blue-color">
                             <div class="course-icon-container">
-                                <img src="./assets/icon.png" />
+                                <img src="assets/icon.png" />
                             </div>
                             <div class="banner">
                                 <h4>Lógica de Programação</h4>
@@ -229,7 +246,8 @@
                                     primis in faucibus.
                                 </p>
 
-                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto Proposto</a>
+                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
+                                    Proposto</a>
                                 <button class="ligth-blue-color">Iniciar</button>
                             </div>
                         </div>
@@ -276,10 +294,10 @@
             <h3>Parceiros</h3>
 
             <div class="logos">
-                <img src="./assets/parceiro.png" alt="parceiro" />
-                <img src="./assets/parceiro.png" alt="parceiro" />
-                <img src="./assets/parceiro.png" alt="parceiro" />
-                <img src="./assets/parceiro.png" alt="parceiro" />
+                <img src="assets/parceiro.png" alt="parceiro" />
+                <img src="assets/parceiro.png" alt="parceiro" />
+                <img src="assets/parceiro.png" alt="parceiro" />
+                <img src="assets/parceiro.png" alt="parceiro" />
             </div>
         </div>
     </section>
