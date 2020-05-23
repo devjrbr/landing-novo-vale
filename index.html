@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <meta content="DevJr" property="og:title" />
+    <meta content="DevJr" property="og:site_name">
+    <meta content="" property="og:url" />
+    <meta content="Description" name="description">
+    <meta content="Description" property="og:description">
+    <meta content="article" property="og:type" />
+    <meta content="pt-br" property="og:locale" />
+    <meta content="pt-br" property="og:locale:alternate" />
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" name="viewport" />
+
+    <meta content="#FFFFFF" name="theme-color">
+    <meta content="#FFFFFF" name="apple-mobile-web-app-status-bar-style">
+
+    <meta content="1200" property="og:image:width">
+    <meta content="630" property="og:image:height">
+    <meta content="./assets/Dev_Jr.png" itemprop="image" property="og:image">
+    <link href="./assets/Dev_Jr.png" rel="icon" sizes="16x16" type="image/x-icon">
+    <link href="./assets/Dev_Jr.png" rel="icon" sizes="32x32" type="image/x-icon">
+
+    <meta charset="utf-8">
+
+    <meta content="pt-br" http-equiv="Content-Language">
+
+    <title> Dev Jr </title>
+
+    <base href="/">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="./assets/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="./assets/fontawesome/css/brands.min.css" rel="stylesheet" />
+    <link href="./assets/fontawesome/css/solid.min.css" rel="stylesheet" />
+    <link href="./assets/fontawesome/css/regular.min.css" rel="stylesheet" />
+
+</head>
+
+<body id="body">
+
+    <section class="jumbotron">
+
+        <header id="navbar">
+
+            <nav class="container">
+                <div class="header-menu">
+
+                    <div class="header-logo-container">
+                        <img src="./assets/Logo.png" alt="Dev Jr" />
+                        <img src="./assets/Dev_Jr.png" alt="Dev Jr" />
+                    </div>
+
+                    <div class="header-options">
+
+                        <a class="activated-header-menu-item">Home</a>
+                        <a>Cursos</a>
+                        <a>Perguntas Frequentes</a>
+
+                    </div>
+                </div>
+
+                <button class="header-button">Cadastre-se</button>
+
+                <input style="height: 0; width: 0;" type="checkbox" id="hambuguer">
+
+                <label for="hambuguer" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <div class="menu-mobile" id="menu-itens">
+                    <a>Home</a>
+                    <a>Cursos</a>
+                    <a>Perguntas Frequentes</a>
+                    <button>Cadastre-se</button>
+                </div>
+
+            </nav>
+
+        </header>
+
+        <div class="container description-container">
+            <div class="description">
+                <h1>
+                    Nós somos o
+                    Novo Futuro Vale
+                </h1>
+                <h2>
+                    In eu nunc eros in eleifend finibus metus eu porta interdum et malesuada fames,
+                    class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                    himenaeos. Suspendisse laoreet consequat lorem ac maximus.
+                </h2>
+            </div>
+
+            <img src="assets/Aluno.png" />
+        </div>
+
+        <a class="anchor" href="#ourcourses">
+            <i class="fas fa-arrow-left"></i>
+            Conheça Nossos Cursos
+        </a>
+    </section>
+
+
+    <section class="courses">
+        <div class="container" id="ourcourses">
+            <small>Lorem ipsum dolor</small>
+            <h3>Nossos Cursos</h3>
+            <div class="courses-content">
+
+                <div class="courses-container">
+
+                    <div class="courses-projects">
+                        <div class="course-panel green-color">
+                            <div class="course-icon-container">
+                                <img src="./assets/icon.png" />
+                            </div>
+                            <div class="banner">
+                                <h4>Lógica de Programação</h4>
+                                <p>
+                                    Lorem ipsum dolor sit
+                                    Interdum et malesuada
+                                    fames ac ante ipsum
+                                    primis in faucibus.
+                                </p>
+
+                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
+                                    Proposto</a>
+                                <button class="green-color">Iniciar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="courses-projects">
+                        <div class="course-panel red-color">
+                            <div class="course-icon-container">
+                                <img src="./assets/icon.png" />
+                            </div>
+                            <div class="banner">
+                                <h4>Lógica de Programação</h4>
+                                <p>
+                                    Lorem ipsum dolor sit
+                                    Interdum et malesuada
+                                    fames ac ante ipsum
+                                    primis in faucibus.
+                                </p>
+
+                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto Proposto</a>
+                                <button class="red-color">Iniciar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="courses-projects">
+                        <div class="course-panel blue-color">
+                            <div class="course-icon-container">
+                                <img src="./assets/icon.png" />
+                            </div>
+                            <div class="banner">
+                                <h4>Lógica de Programação</h4>
+                                <p>
+                                    Lorem ipsum dolor sit
+                                    Interdum et malesuada
+                                    fames ac ante ipsum
+                                    primis in faucibus.
+                                </p>
+
+                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto Proposto</a>
+                                <button class="blue-color">Iniciar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="courses-projects">
+                        <div class="course-panel pink-color">
+                            <div class="course-icon-container">
+                                <img src="./assets/icon.png" />
+                            </div>
+                            <div class="banner">
+                                <h4>Lógica de Programação</h4>
+                                <p>
+                                    Lorem ipsum dolor sit
+                                    Interdum et malesuada
+                                    fames ac ante ipsum
+                                    primis in faucibus.
+                                </p>
+
+                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto Proposto</a>
+                                <button class="pink-color">Iniciar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="courses-projects">
+                        <div class="course-panel yellow-color">
+                            <div class="course-icon-container">
+                                <img src="./assets/icon.png" />
+                            </div>
+                            <div class="banner">
+                                <h4>Lógica de Programação</h4>
+                                <p>
+                                    Lorem ipsum dolor sit
+                                    Interdum et malesuada
+                                    fames ac ante ipsum
+                                    primis in faucibus.
+                                </p>
+
+                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto Proposto</a>
+                                <button class="yellow-color">Iniciar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="courses-projects">
+                        <div class="course-panel ligth-blue-color">
+                            <div class="course-icon-container">
+                                <img src="./assets/icon.png" />
+                            </div>
+                            <div class="banner">
+                                <h4>Lógica de Programação</h4>
+                                <p>
+                                    Lorem ipsum dolor sit
+                                    Interdum et malesuada
+                                    fames ac ante ipsum
+                                    primis in faucibus.
+                                </p>
+
+                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto Proposto</a>
+                                <button class="ligth-blue-color">Iniciar</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="courses-menu">
+                    <a class="activated-menu-item">
+                        Entendendo a programação
+                    </a>
+                    <a>
+                        Conceitos básicos
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="feature">
+        <div class="container feature-container">
+            <h2 class="feature-h2">
+                Faça parte
+                do Novo
+                Futuro Vale
+            </h2>
+            <div class="feature-paragraph">
+                <p>
+                    Para que o seu aprendizado seja supervisionado
+                    pela nossa comunidade de programadores, é necessário fazer
+                    um cadastro bem simples.
+                </p>
+                <button>Cadastre-se</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="container partners-container">
+            <small>Lorem ipsum dolor</small>
+            <h3>Parceiros</h3>
+
+            <div class="logos">
+                <img src="./assets/parceiro.png" alt="parceiro" />
+                <img src="./assets/parceiro.png" alt="parceiro" />
+                <img src="./assets/parceiro.png" alt="parceiro" />
+                <img src="./assets/parceiro.png" alt="parceiro" />
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container faq-container">
+            <small>Perguntas Frequentes</small>
+            <h3>Como podemos ajudar?</h3>
+            <div class="panel-container">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h4>Ipsum primis in mattis?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="panel-content">
+                        Aenean varius convallis arcu non fringilla. Nulla auctor, diam non bibendum tempus, nisl dui
+                        maximus
+                        augue, ut suscipit elit ipsum id elit. Nulla pretium euismod sapien varius placerat.
+                        Suspendisse erat leo, facilisis id ligula sit amet, gravida rutrum elit.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <p class="footer-description">
+                © 2020. DevJr - Novo Futuro Vale
+            </p>
+            <p class="footer-icons">
+                <a>
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a>
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <div id="modal_example" class="modal">
+        <div class="close" onclick="toggleModal('modal_example')"></div>
+        <div class="modal-container">
+            teste
+        </div>
+
+    </div>
+
+    <script>
+        function openMenu() {
+            const body = window.document.getElementById("body");
+            if (body.style.overflow)
+                body.style.overflow = ""
+            else
+                body.style.overflow = "hidden"
+        }
+
+        function toggleModal(modalId) {
+            const modal = window.document.getElementById(modalId);
+            if (!modal)
+                throw "This element was not found";
+            if (modal.style.display === "none" || modal.style.display === "")
+                modal.style.display = "flex"
+            else
+                modal.style.display = "none"
+        }
+    </script>
+
+</body>
+
+</html>
