@@ -1,4 +1,8 @@
 /* Global */
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -198,6 +202,19 @@ header > .container {
 
 .header-options > a {
     line-height: 94px;
+    color: #c0c2bd;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+.header-options a:first-child{
+    color: white;
+}
+
+.header-options a:hover{
+    color: #87c441;
+    transition: all 0.3s ease-in;
 }
 
 .description-container {
@@ -295,13 +312,16 @@ header > .container > label {
 }
 
 .courses-projects {
-
     display: grid;
 
     grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
     column-gap: 21px;
     row-gap: 54px;
 
+}
+
+.courses-section{
+    display: none;
 }
 
 .course-panel {
@@ -388,8 +408,7 @@ header > .container > label {
 
 .courses-menu > a {
     display: flex;
-    align-items:center ;
-    text-align: right;
+    align-items: center;
     padding-right: 38px;
     height: 63px;
     border-right: 5px solid #d2d2d2;
@@ -481,6 +500,16 @@ header > .container > label {
 
 .faq {
     background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.panel-header{
+    transition: all 0.5s ease-out;
+}
+
+.panel-content{
+    margin-bottom: 20px;
+    display: none;
 }
 
 
@@ -508,10 +537,22 @@ footer {
 
 .footer-icons {
     font-size: 25px;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-icons > i {
     margin: 0 5px 0 5px;
+}
+
+.footer-icons a{
+    color: whitesmoke;
+}
+
+.footer-icons a:hover{
+    color: #84be41;
+    transition: all 0.3s ease-in;
 }
 
 /* Modal */
