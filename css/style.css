@@ -154,7 +154,10 @@ header {
     display: flex;
     height: 100px;
     background-color: #000000;
-    opacity: 0.8;
+}
+
+.header-menu{
+     opacity: 0.8;
 }
 
 header > .container {
@@ -600,6 +603,7 @@ footer {
 }
 
 .menu-mobile {
+    opacity: 1 !important;
     position: absolute;
     top: 0;
     height: 100vh;
@@ -609,7 +613,6 @@ footer {
 
     display: flex;
     flex-direction: column;
-    flex: 1;
 
     align-content: center;
     justify-content: center;
@@ -617,14 +620,18 @@ footer {
 }
 
 .menu-mobile > a {
+    color: #1a1a1a;
+    font-size: 1.75rem;
     margin-bottom: 16px;
+    font-weight: 500;
 }
 
 .menu-mobile > button {
     width: 166px;
     height: 44px;
-    background-color: #ffffff;
-    color: #87c441;
+    background-color: #1a1a1a;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 700;
+    opacity: 0.9;
 }

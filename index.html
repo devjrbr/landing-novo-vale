@@ -81,7 +81,7 @@
 
                 <input style="height: 0; width: 0; display: none;" type="checkbox" id="hambuguer">
 
-                <label for="hambuguer" onclick="openMenu()">
+                <label for="hambuguer" onclick="openMenu()" id="menu-icon">
                     <i class="fas fa-bars"></i>
                 </label>
 
@@ -388,10 +388,19 @@
     <script>
         function openMenu() {
             const body = window.document.getElementById("body");
-            if (body.style.overflow)
-                body.style.overflow = ""
-            else
-                body.style.overflow = "hidden"
+            const menuIcon = window.document.querySelector("#menu-icon i");
+
+                menuIcon.classList.add('fa-times');
+            if (body.style.overflow){
+                body.style.overflow = "";
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            } else{
+                menuIcon.classList.add('fa-times');
+                menuIcon.classList.remove('fa-bars');
+                body.style.overflow = "hidden";
+            }
+                
         }
 
         function toggleModal(modalId) {
