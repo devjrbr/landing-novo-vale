@@ -70,7 +70,7 @@
 
                     <div class="header-options">
 
-                        <a class="activated-header-menu-item">Home</a>
+                        <a>Home</a>
                         <a href="#ourcourses">Cursos</a>
                         <a href="#FAQ">Perguntas Frequentes</a>
 
@@ -86,9 +86,9 @@
                 </label>
 
                 <div class="menu-mobile" id="menu-itens">
-                    <a href="/">Home</a>
-                    <a href="#ourcourses">Cursos</a>
-                    <a href="#FAQ">Perguntas Frequentes</a>
+                    <a href="index.html" onclick="closeMenu()">Home</a>
+                    <a href="#ourcourses" onclick="closeMenu()">Cursos</a>
+                    <a href="#FAQ" onclick="closeMenu()">Perguntas Frequentes</a>
                     <button>Cadastre-se</button>
                 </div>
 
@@ -122,147 +122,16 @@
     <section class="courses">
         <div class="container" id="ourcourses">
             <small>Lorem ipsum dolor</small>
-            <h3>Nossos Cursos</h3>
+            <h3>Trilha de Cursos</h3>
             <div class="courses-content">
 
-                <div class="courses-container">
-
-                    <div class="courses-section courses-projects" data-category="green">
-                        <div class="course-panel green-color">
-                            <div class="course-icon-container">
-                                <img src="assets/icon.png" />
-                            </div>
-                            <div class="banner">
-                                <h4>Lógica de Programação</h4>
-                                <p>
-                                    Lorem ipsum dolor sit
-                                    Interdum et malesuada
-                                    fames ac ante ipsum
-                                    primis in faucibus.
-                                </p>
-
-                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
-                                    Proposto</a>
-                                <button class="green-color">Iniciar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="courses-section courses-projects" data-category="red">
-                        <div class="course-panel red-color">
-                            <div class="course-icon-container">
-                                <img src="assets/icon.png" />
-                            </div>
-                            <div class="banner">
-                                <h4>Lógica de Programação</h4>
-                                <p>
-                                    Lorem ipsum dolor sit
-                                    Interdum et malesuada
-                                    fames ac ante ipsum
-                                    primis in faucibus.
-                                </p>
-
-                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
-                                    Proposto</a>
-                                <button class="red-color">Iniciar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="courses-section courses-projects" data-category="blue">
-                        <div class="course-panel blue-color">
-                            <div class="course-icon-container">
-                                <img src="assets/icon.png" />
-                            </div>
-                            <div class="banner">
-                                <h4>Lógica de Programação</h4>
-                                <p>
-                                    Lorem ipsum dolor sit
-                                    Interdum et malesuada
-                                    fames ac ante ipsum
-                                    primis in faucibus.
-                                </p>
-
-                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
-                                    Proposto</a>
-                                <button class="blue-color">Iniciar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="courses-section courses-projects" data-category="pink">
-                        <div class="course-panel pink-color">
-                            <div class="course-icon-container">
-                                <img src="assets/icon.png" />
-                            </div>
-                            <div class="banner">
-                                <h4>Lógica de Programação</h4>
-                                <p>
-                                    Lorem ipsum dolor sit
-                                    Interdum et malesuada
-                                    fames ac ante ipsum
-                                    primis in faucibus.
-                                </p>
-
-                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
-                                    Proposto</a>
-                                <button class="pink-color">Iniciar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="courses-section courses-projects" data-category="yellow">
-                        <div class="course-panel yellow-color">
-                            <div class="course-icon-container">
-                                <img src="assets/icon.png" />
-                            </div>
-                            <div class="banner">
-                                <h4>Lógica de Programação</h4>
-                                <p>
-                                    Lorem ipsum dolor sit
-                                    Interdum et malesuada
-                                    fames ac ante ipsum
-                                    primis in faucibus.
-                                </p>
-
-                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
-                                    Proposto</a>
-                                <button class="yellow-color">Iniciar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="courses-section courses-projects" data-category="ligth-blue">
-                        <div class="course-panel ligth-blue-color">
-                            <div class="course-icon-container">
-                                <img src="assets/icon.png" />
-                            </div>
-                            <div class="banner">
-                                <h4>Lógica de Programação</h4>
-                                <p>
-                                    Lorem ipsum dolor sit
-                                    Interdum et malesuada
-                                    fames ac ante ipsum
-                                    primis in faucibus.
-                                </p>
-
-                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
-                                    Proposto</a>
-                                <button class="ligth-blue-color">Iniciar</button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
+                <div class="courses-container"></div>
 
                 <nav class="courses-menu">
-                    <a data-category="green">Entendendo a programação</a>
-                    <a data-category="red">Conceitos básicos</a>
-                    <a data-category="yellow">Lorem</a>
-                    <a data-category="blue">Lorem básico</a>
-                    <a data-category="pink">Lorem framework</a>
-                    <a data-category="ligth-blue">Lorem ninja</a>
+                    <a class="activated-menu-item" onclick="filterCourses('all')">Todos cursos</a>
+                    <a onclick="filterCourses('logic')">Entendendo a programação</a>
+                    <a onclick="filterCourses('html')">HTML5 e CSS3</a>
+                    <a onclick="filterCourses('javascript')">Javascript</a>
                 </nav>
             </div>
 
@@ -314,10 +183,10 @@
                     </div>
                     <div class="panel-content" data-answer="1">
                         <p>
-                        Aenean varius convallis arcu non fringilla. Nulla auctor, diam non bibendum tempus, nisl dui
-                        maximus
-                        augue, ut suscipit elit ipsum id elit. Nulla pretium euismod sapien varius placerat.
-                        Suspendisse erat leo, facilisis id ligula sit amet, gravida rutrum elit.</p>
+                            Aenean varius convallis arcu non fringilla. Nulla auctor, diam non bibendum tempus, nisl dui
+                            maximus
+                            augue, ut suscipit elit ipsum id elit. Nulla pretium euismod sapien varius placerat.
+                            Suspendisse erat leo, facilisis id ligula sit amet, gravida rutrum elit.</p>
                     </div>
                 </div>
                 <div class="panel">
@@ -385,35 +254,8 @@
 
     </div>
 
-    <script>
-        function openMenu() {
-            const body = window.document.getElementById("body");
-            const menuIcon = window.document.querySelector("#menu-icon i");
-
-                menuIcon.classList.add('fa-times');
-            if (body.style.overflow){
-                body.style.overflow = "";
-                menuIcon.classList.remove('fa-times');
-                menuIcon.classList.add('fa-bars');
-            } else{
-                menuIcon.classList.add('fa-times');
-                menuIcon.classList.remove('fa-bars');
-                body.style.overflow = "hidden";
-            }
-                
-        }
-
-        function toggleModal(modalId) {
-            const modal = window.document.getElementById(modalId);
-            if (!modal)
-                throw "This element was not found";
-            if (modal.style.display === "none" || modal.style.display === "")
-                modal.style.display = "flex"
-            else
-                modal.style.display = "none"
-        }
-    </script>
-    <script type="module" src="js/main.js"></script>
+    <script src="js/modules/toggleQuestionFAQ.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

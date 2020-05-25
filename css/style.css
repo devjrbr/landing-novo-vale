@@ -104,10 +104,20 @@ button, a {
     border: 2px solid #87c441;
 }
 
+.course-panel > .banner > a > button.green-color:hover {
+    background-color: #87c441;
+    color: #FFF;
+}
+
 .red-color {
     background-color: #c47541;
     color: #c47541;
     border: 2px solid #c47541;
+}
+
+.course-panel > .banner > a > button.red-color:hover {
+    background-color: #c47541;
+    color: #FFF;
 }
 
 .blue-color {
@@ -116,10 +126,20 @@ button, a {
     border: 2px solid #41b6c4;
 }
 
+.course-panel > .banner > a > button.blue-color:hover {
+    background-color: #41b6c4;
+    color: #FFF;
+}
+
 .pink-color {
     background-color: #e18ff0;
     color: #e18ff0;
     border: 2px solid #e18ff0;
+}
+
+.course-panel > .banner > a > button.pink-color:hover {
+    background-color: #e18ff0;
+    color: #FFF;
 }
 
 .yellow-color {
@@ -128,10 +148,20 @@ button, a {
     border: 2px solid #f9ba40;
 }
 
+.course-panel > .banner > a > button.yellow-color:hover {
+    background-color: #f9ba40;
+    color: #FFF;
+}
+
 .ligth-blue-color {
     background-color: #61cbd4;
     color: #61cbd4;
     border: 2px solid #61cbd4;
+}
+
+.course-panel > .banner > a > button.ligth-blue-color:hover {
+    background-color: #61cbd4;
+    color: #FFF;
 }
 
 .activated-menu-item {
@@ -185,6 +215,7 @@ header > .container {
 }
 
 .header-logo-container img:first-child {
+    margin-left: 18px;
     margin-right: 18px;
 }
 
@@ -218,6 +249,7 @@ header > .container {
 .header-options a:hover{
     color: #87c441;
     transition: all 0.3s ease-in;
+    border-bottom: 5px solid #87c441 !important;
 }
 
 .description-container {
@@ -306,12 +338,17 @@ header > .container > label {
 .courses-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(259px, 259px));
-    justify-content: center;
     row-gap: 54px;
     column-gap: 21px;
 
     margin-top: 84px;
     margin-bottom: 79px;
+}
+
+@media (max-width: 726px){
+    .courses-container {
+        justify-content: center;
+    }
 }
 
 .courses-projects {
@@ -365,7 +402,7 @@ header > .container > label {
     line-height: 22px;
 }
 
-.course-panel > .banner > a {
+.course-panel > .banner > a.projeto {
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 5px;
@@ -378,9 +415,8 @@ header > .container > label {
     line-height: 22px;
 }
 
-.course-panel > .banner > button {
+.course-panel > .banner > a > button {
     width: 179px;
-    height: 49px;
     background-color: #ffffff;
     justify-self: center;
 }
@@ -398,16 +434,20 @@ header > .container > label {
 }
 
 .courses-menu {
-
     display: grid;
     grid-template-columns: 156px;
     grid-template-rows: 63px;
-    
+    height: 63px;
     align-items: flex-start;
     row-gap: 6px;
     margin-top: 84px;
 }
 
+@media (max-width: 520px){
+    .courses-menu{
+        display:none;
+    }
+}
 
 .courses-menu > a {
     display: flex;
@@ -415,6 +455,10 @@ header > .container > label {
     padding-right: 38px;
     height: 63px;
     border-right: 5px solid #d2d2d2;
+}
+
+.courses-menu > a:hover {
+    border-right: 5px solid #87c441 !important;
 }
 
 
@@ -446,6 +490,12 @@ header > .container > label {
     flex-direction: column;
     align-content: space-between;
     line-height: 32px;
+}
+
+@media (max-width:930px){
+    .feature-paragraph {
+        align-items: center;
+    }
 }
 
 .feature-paragraph > button {
