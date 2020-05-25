@@ -5,8 +5,8 @@ function toggleQuestionFAQ() {
 
     if(answer.style.display === "none" || answer.style.display === ""){
         answer.style.display = "block";
-        icon.classList.add('fa-plus');
-        icon.classList.remove('fa-minus');
+        icon.classList.remove('fa-plus');
+        icon.classList.add('fa-minus');
     } else{
         answer.style.display = "";
         icon.classList.remove('fa-minus');

@@ -138,6 +138,10 @@ button, a {
     border-right: 5px solid #87c441 !important;
 }
 
+.inactivated-menu-item {
+    border-right: 5px solid #666666 !important;
+}
+
 .activated-header-menu-item {
     border-bottom: 5px solid #87c441 !important;
 }
@@ -217,6 +221,7 @@ header > .container {
 
 .header-options a:hover{
     color: #87c441;
+    text-decoration: underline;
     transition: all 0.3s ease-in;
 }
 
@@ -320,11 +325,14 @@ header > .container > label {
     grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
     column-gap: 21px;
     row-gap: 54px;
-
 }
 
 .courses-section{
     display: none;
+}
+
+.show-courses{
+    display: block;
 }
 
 .course-panel {
@@ -415,6 +423,24 @@ header > .container > label {
     padding-right: 38px;
     height: 63px;
     border-right: 5px solid #d2d2d2;
+}
+
+@media only screen and (max-width:768px){
+    .courses-menu {
+        display: flex;
+        row-gap: 0;
+        flex-direction: column;
+        margin-top: 30px;
+        order: -1;
+    }
+
+    .courses-menu > a {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        border-right: none;
+        border-bottom: 5px solid #d2d2d2;
+    }
 }
 
 
@@ -600,10 +626,11 @@ footer {
 
 #navbar > nav input:checked ~ #menu-itens {
     display: flex;
+
 }
 
 .menu-mobile {
-    opacity: 1 !important;
+    opacity: 1;
     position: absolute;
     top: 0;
     height: 100vh;

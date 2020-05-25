@@ -57,45 +57,43 @@
 <body id="body">
 
     <section class="jumbotron">
-
         <header id="navbar">
 
             <nav class="container">
                 <div class="header-menu">
-
+    
                     <div class="header-logo-container">
                         <img src="assets/Logo.png" alt="Dev Jr" />
                         <img src="assets/Dev_Jr.png" alt="Dev Jr" />
                     </div>
-
+    
                     <div class="header-options">
-
+    
                         <a class="activated-header-menu-item">Home</a>
                         <a href="#ourcourses">Cursos</a>
                         <a href="#FAQ">Perguntas Frequentes</a>
-
+    
                     </div>
                 </div>
-
+    
                 <button class="header-button">Cadastre-se</button>
-
+    
                 <input style="height: 0; width: 0; display: none;" type="checkbox" id="hambuguer">
-
+    
                 <label for="hambuguer" onclick="openMenu()" id="menu-icon">
                     <i class="fas fa-bars"></i>
                 </label>
-
+    
                 <div class="menu-mobile" id="menu-itens">
                     <a href="/">Home</a>
-                    <a href="#ourcourses">Cursos</a>
-                    <a href="#FAQ">Perguntas Frequentes</a>
+                    <a href="#ourcourses" onclick="closeMenu();">Cursos</a>
+                    <a href="#FAQ" onclick="closeMenu();">Perguntas Frequentes</a>
                     <button>Cadastre-se</button>
                 </div>
-
+    
             </nav>
-
+    
         </header>
-
         <div class="container description-container">
             <div class="description">
                 <h1>
@@ -144,6 +142,27 @@
                                 <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
                                     Proposto</a>
                                 <button class="green-color">Iniciar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="courses-section courses-projects" data-category="yellow">
+                        <div class="course-panel yellow-color">
+                            <div class="course-icon-container">
+                                <img src="assets/icon.png" />
+                            </div>
+                            <div class="banner">
+                                <h4>Lógica de Programação</h4>
+                                <p>
+                                    Lorem ipsum dolor sit
+                                    Interdum et malesuada
+                                    fames ac ante ipsum
+                                    primis in faucibus.
+                                </p>
+
+                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
+                                    Proposto</a>
+                                <button class="yellow-color">Iniciar</button>
                             </div>
                         </div>
                     </div>
@@ -253,10 +272,32 @@
                         </div>
                     </div>
 
+                    <div class="courses-section courses-projects" data-category="green">
+                        <div class="course-panel green-color">
+                            <div class="course-icon-container">
+                                <img src="assets/icon.png" />
+                            </div>
+                            <div class="banner">
+                                <h4>Lógica de Programação</h4>
+                                <p>
+                                    Lorem ipsum dolor sit
+                                    Interdum et malesuada
+                                    fames ac ante ipsum
+                                    primis in faucibus.
+                                </p>
+
+                                <a onclick="toggleModal('modal_example')"><i class="far fa-file"></i>Com Projeto
+                                    Proposto</a>
+                                <button class="green-color">Iniciar</button>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
 
                 <nav class="courses-menu">
+                    <a data-category="all">Todos os Cursos</a>
                     <a data-category="green">Entendendo a programação</a>
                     <a data-category="red">Conceitos básicos</a>
                     <a data-category="yellow">Lorem</a>
@@ -387,21 +428,12 @@
 
     <script>
         function openMenu() {
-            const body = window.document.getElementById("body");
             const menuIcon = window.document.querySelector("#menu-icon i");
+            const label = window.document.querySelector("#menu-icon");
 
-                menuIcon.classList.add('fa-times');
-            if (body.style.overflow){
-                body.style.overflow = "";
-                menuIcon.classList.remove('fa-times');
-                menuIcon.classList.add('fa-bars');
-            } else{
-                menuIcon.classList.add('fa-times');
-                menuIcon.classList.remove('fa-bars');
-                body.style.overflow = "hidden";
-            }
-                
+            if(!label.checked) menuIcon.classList.toggle('fa-times');
         }
+
 
         function toggleModal(modalId) {
             const modal = window.document.getElementById(modalId);
