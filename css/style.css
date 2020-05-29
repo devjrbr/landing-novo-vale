@@ -498,7 +498,7 @@ header > .container > label {
     }
 }
 
-.feature-paragraph > button {
+.feature-paragraph > a > button {
     margin-top: 46px;
     color: #86c156;
     width: 166px;
