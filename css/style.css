@@ -685,3 +685,8 @@ footer {
     font-weight: 700;
     opacity: 0.9;
 }
+
+.logos > img {
+    width: 100%;
+    max-width: 198px;
+}
