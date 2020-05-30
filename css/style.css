@@ -215,7 +215,6 @@ header > .container {
 }
 
 .header-logo-container img:first-child {
-    margin-left: 18px;
     margin-right: 18px;
 }
 
@@ -547,6 +546,7 @@ header > .container > label {
     justify-items: center;
     margin-top: 79px;
     justify-content: center;
+    align-items: center;
 }
 
 /* Faq */
@@ -640,6 +640,26 @@ footer {
     z-index: 2;
     margin: auto;
     border-radius: 4px;
+    width: 100%;
+    max-width: 800px;
+    max-height: 800px;
+    overflow: auto;
+    padding: 100px;
+}
+
+.modal-container p {
+    margin-bottom: 20px;
+}
+
+.modal-container ul li {
+    margin-bottom: 10px;
+}
+
+@media (max-width:768px){
+    .modal-container {
+        max-height: 300px;
+        padding: 10px;
+    }
 }
 
 /* Menu Mobile */
@@ -684,9 +704,4 @@ footer {
     font-size: 18px;
     font-weight: 700;
     opacity: 0.9;
-}
-
-.logos > img {
-    width: 100%;
-    max-width: 198px;
 }

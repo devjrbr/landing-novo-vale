@@ -14,28 +14,32 @@ const courses = [
         description: 'É a forma como o desenvolvedor entende a comunicação a fim de programar uma função de um programa.',
         link: 'https://web.digitalinnovation.one/course/logica-de-programacao-essencial/learning/aea1ea26-fd56-417d-8272-6e15253f4405',
         color: 'green-color',
-        category: 'logic'
+        category: 'logic',
+        modal: 'modal_example_1'
     },
     {
         title: 'HTML5 e CSS3 básico',
         description: 'Aprenda a construir uma página WEB utilizando estrutura de HTML5 e defina estilos para elementos utilizando CSS3.',
         link: 'https://web.digitalinnovation.one/course/programando-interfaces-com-html5-e-css3/learning/f5066ef9-b542-43c0-a3c5-1519c61b84ee/',
         color: 'red-color',
-        category: 'html'
+        category: 'html',
+        modal: 'modal_example_2'
     },
     {
         title: 'Construindo páginas com Bootstrap',
         description: 'Aprenda a utilizar o framework Bootstrap e aprofunde mais o seu conhecimento.',
-        link: 'https://web.digitalinnovation.one/course/programando-interfaces-com-html5-e-css3/learning/f5066ef9-b542-43c0-a3c5-1519c61b84ee/',
+        link: 'https://web.digitalinnovation.one/course/crie-paginas-responsivas-na-web-utilizando-um-poderoso-framework/learning/d5695916-44d4-4d47-9db4-0bc829264835/',
         color: 'red-color',
-        category: 'html'
+        category: 'html',
+        modal: 'modal_example_3'
     },
     {
         title: 'Iniciando com javascript',
         description: 'É uma das mais importantes linguagens front-end, e nesse curso você entenderá o porquê e como trabalhar com ela.',
         link: 'https://web.digitalinnovation.one/course/programacao-para-internet-com-javascript/learning/33e81edf-6f9b-4b97-b3c6-12d930cf0831/',
         color: 'blue-color',
-        category: 'javascript'
+        category: 'javascript',
+        modal: 'modal_example_4'
     },
 ]
 
@@ -79,7 +83,7 @@ function filterCourses(category) {
                             ${course.description}
                         </p>
     
-                        <a class="projeto" onclick="toggleModal('modal_example')">
+                        <a class="projeto" onclick="toggleModal('${course.modal}')">
                             <i class="far fa-file"></i>
                             Com Projeto Proposto
                         </a>
@@ -105,7 +109,7 @@ function filterCourses(category) {
                             ${course.description}
                         </p>
     
-                        <a class="projeto" onclick="toggleModal('modal_example')">
+                        <a class="projeto" onclick="toggleModal('${course.modal}')">
                             <i class="far fa-file"></i>
                             Com Projeto Proposto
                         </a>

@@ -43,7 +43,7 @@
 
     <meta content="pt-br" http-equiv="Content-Language">
 
-    <title> Dev Jr </title>
+    <title> Novo Futuro Tech </title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -64,20 +64,21 @@
                 <div class="header-menu">
 
                     <div class="header-logo-container">
-                        <img src="assets/Logo.png" alt="Dev Jr" />
-                        <img src="assets/Dev_Jr.png" alt="Dev Jr" />
+                        <img src="assets/novo_futuro_logo.png" width="200" alt="Novo Futuro" />
                     </div>
 
                     <div class="header-options">
 
-                        <a>Home</a>
-                        <a href="#ourcourses">Cursos</a>
+                        <a href="index.html">Home</a>
+                        <a href="#ourcourses">Cursos gratuitos</a>
                         <a href="#FAQ">Perguntas Frequentes</a>
 
                     </div>
                 </div>
 
-                <button class="header-button">Cadastre-se</button>
+                <a href="https://forms.gle/amMt6W7sSFm34FqL8" target="_blank">
+                    <button class="header-button">Cadastre-se</button>
+                </a>
 
                 <input style="height: 0; width: 0; display: none;" type="checkbox" id="hambuguer">
 
@@ -87,9 +88,11 @@
 
                 <div class="menu-mobile" id="menu-itens">
                     <a href="index.html" onclick="closeMenu()">Home</a>
-                    <a href="#ourcourses" onclick="closeMenu()">Cursos</a>
+                    <a href="#ourcourses" onclick="closeMenu()">Cursos gratuitos</a>
                     <a href="#FAQ" onclick="closeMenu()">Perguntas Frequentes</a>
-                    <button>Cadastre-se</button>
+                    <a href="https://forms.gle/amMt6W7sSFm34FqL8" target="_blank">
+                        <button>Cadastre-se</button>
+                    </a>
                 </div>
 
             </nav>
@@ -150,7 +153,7 @@
                     programadores de Taubaté
                     durante toda sua jornada de aprendizado.
                 </p>
-                <a href="https://chat.whatsapp.com/HSXVEGLqkpn9LhnwejE94j" target="_blank">
+                <a href="https://chat.whatsapp.com/FxUcsnIYmKP8gkbqCZ8itx" target="_blank">
                     <button>Entrar no grupo</button>
                 </a>
             </div>
@@ -163,9 +166,10 @@
             <h3>Principais organizadores</h3>
 
             <div class="logos">
-                <img src="assets/parceiro.png" alt="parceiro" />
-                <img src="assets/novo_futuro.png" alt="parceiro" />
-                <img src="assets/sergio_victor.png" alt="parceiro" />
+                <img src="assets/parceiro.png" class="img-parceiro" alt="parceiro" />
+                <img src="assets/novo_futuro.png" class="img-parceiro" alt="parceiro" />
+                <img src="assets/sergio_victor.png" class="img-parceiro" alt="parceiro" />
+                <img src="assets/dev_jr_logo.png" width="100" height="100" alt="parceiro" />
             </div>
         </div>
     </section>
@@ -366,7 +370,7 @@
     <footer>
         <div class="container footer-container">
             <p class="footer-description">
-                © 2020. DevJr - Novo Futuro Vale
+                © 2020. Novo Futuro Tech
             </p>
             <p class="footer-icons">
                 <a href="https://www.instagram.com/devjrtaubate/" target="_blank">
@@ -380,12 +384,121 @@
         </div>
     </footer>
 
-    <div id="modal_example" class="modal">
-        <div class="close" onclick="toggleModal('modal_example')"></div>
+    <div id="modal_example_1" class="modal">
+        <div class="close" onclick="toggleModal('modal_example_1')"></div>
         <div class="modal-container">
-            teste
+            <p>
+                Após concluir o curso de lógica de programação, escolha no mínimo 30 exercícios para treinar sua lógica.
+            </p>
+            <p>
+                <a href="https://www.urionlinejudge.com.br/judge/pt/problems/index/1" target="_blank">
+                    clique aqui para escolher os exercícios
+                </a>
+            </p>
+            <p>
+                Após os exercícios finalizados, salvar o código em TXT de cada um e encaminhar para nós por email.
+                <a href="mailto:devjrtaubate@gmail.com">devjrtaubate@gmail.com</a>
+            </p>
+            <p>
+                Dúvidas serão tiradas pelo grupo do WhatsApp.
+                <a href="https://chat.whatsapp.com/FxUcsnIYmKP8gkbqCZ8itx" target="_blank">
+                    clique aqui para entrar
+                </a>
+            </p>
         </div>
+    </div>
 
+    <div id="modal_example_2" class="modal">
+        <div class="close" onclick="toggleModal('modal_example_2')"></div>
+        <div class="modal-container">
+            <p>
+                Construa uma página HTML com CSS, e o tema deve ser de sua própria escolha.
+            </p>
+
+            <p>
+                A página deve possuir esses itens:
+            </p>
+
+            <ul>
+                <li>Começar com um header.</li>
+                <li>Os conteúdos devem ser separados por sections. <br>(Deve haver no mínimo 5 sections de sua escolha.)
+                </li>
+                <li>Terminar com um footer.</li>
+            </ul>
+            <p>
+                Você deve encaminhar o projeto finalizado e zipado para o email:
+                <a href="mailto:devjrtaubate@gmail.com">devjrtaubate@gmail.com</a>
+            </p>
+            <p>
+                Dúvidas serão tiradas pelo grupo do WhatsApp.
+                <a href="https://chat.whatsapp.com/FxUcsnIYmKP8gkbqCZ8itx" target="_blank">
+                    clique aqui para entrar
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div id="modal_example_3" class="modal">
+        <div class="close" onclick="toggleModal('modal_example_3')"></div>
+        <div class="modal-container">
+            <p>
+                Pegue a página desenvolvida anteriormente no curso de HTML5 e CSS3, e aplique o bootstrap na mesma.
+            </p>
+            <p>
+                Você deve encaminhar o projeto finalizado e zipado para o email:
+                <a href="mailto:devjrtaubate@gmail.com">devjrtaubate@gmail.com</a>
+            </p>
+            <p>
+                Dúvidas serão tiradas pelo grupo do WhatsApp.
+                <a href="https://chat.whatsapp.com/FxUcsnIYmKP8gkbqCZ8itx" target="_blank">
+                    clique aqui para entrar
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div id="modal_example_4" class="modal">
+        <div class="close" onclick="toggleModal('modal_example_4')"></div>
+        <div class="modal-container">
+            <p>
+                Crie um formulário de contato no site desenvolvido anteriormente no curso de HTML5 e CSS3 ou Bootstrap.
+            </p>
+            <p>
+                O formulário deve mostrar os dados em qualquer lugar da própria página definido por você.
+            </p>
+            <p>
+                Conteúdos para facilitar:
+            </p>
+            <p>
+                <u>
+                    <li>
+                        <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">
+                            Formulário em HTML
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/jsref/prop_text_value.asp" target="_blank">
+                            Capturar valor de um input
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp" target="_blank">
+                            Inserindo HTML dentro de um elemento pelo ID com javascript
+                        </a>
+                    </li>
+                </u>
+            </p>
+            <p>
+                Você deve encaminhar o projeto finalizado e zipado para o email:
+                <a href="mailto:devjrtaubate@gmail.com">devjrtaubate@gmail.com</a>
+            </p>
+            <p>
+                Dúvidas serão tiradas pelo grupo do WhatsApp.
+                <a href="https://chat.whatsapp.com/FxUcsnIYmKP8gkbqCZ8itx" target="_blank">
+                    clique aqui para entrar
+                </a>
+            </p>
+        </div>
     </div>
 
     <script src="js/modules/toggleQuestionFAQ.js"></script>
