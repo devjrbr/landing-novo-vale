@@ -255,7 +255,11 @@ header > .container {
     display: flex;
     flex-direction: row;
     flex: 1;
-    margin-top: 123px;
+    margin-top: 83px;
+}
+
+.description-container img {
+    max-width: 454px;
 }
 
 @media screen and (max-width: 859px) {
