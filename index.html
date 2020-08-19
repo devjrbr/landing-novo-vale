@@ -55,6 +55,9 @@
     <link href="assets/fontawesome/css/brands.min.css" rel="stylesheet" />
     <link href="assets/fontawesome/css/solid.min.css" rel="stylesheet" />
     <link href="assets/fontawesome/css/regular.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
+    <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
 
     <!-- Facebook Pixel Code -->
     <!-- <script>
@@ -106,31 +109,15 @@
     <section class="jumbotron">
 
         <header id="navbar">
-
             <nav class="container">
                 <div class="header-menu">
 
                     <div class="header-logo-container">
                         <img src="assets/novo_futuro_logo.png" width="200" alt="Novo Futuro" />
                     </div>
-
-                    <div class="header-options">
-
-                        <a href="index.html">Home</a>
-                        <a href="#ourcourses">Cursos gratuitos</a>
-                        <a href="#inc">Empresas e Vagas em TI</a>
-                        <a href=" https://forms.gle/At3V7VmRwRoP9z4K9" target="_blank">Banco de Talentos</a>
-                        <a href="#vids">Videos e Conteudos</a>
-                        <a href="#about">Sobre</a>
-                        <a href="#FAQ">Perguntas Frequentes</a>
-
-                    </div>
+                    
                 </div>
-
-                <a href="https://forms.gle/amMt6W7sSFm34FqL8" target="_blank">
-                    <button class="header-button">Cadastre-se</button>
-                </a>
-
+              
                 <input style="height: 0; width: 0; display: none;" type="checkbox" id="hambuguer">
 
                 <label for="hambuguer" onclick="openMenu()" id="menu-icon">
@@ -148,6 +135,24 @@
 
             </nav>
 
+            <input type="checkbox" id="check">
+            <label for="check">
+                <img src="/assets/menu.png" id="but" alt="" width="40px">
+            </label>
+            
+            <div class="sidebarmenu">
+              
+                <ul>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="#ourcouses">Cursos gratuitos</a></li>
+                    <li><a href="#inc">Empresas e vagas em TI</a></li>
+                    <li><a href="https://forms.gle/At3V7VmRwRoP9z4K9" target="_blank">Banco de Talentos</a></li>
+                    <li><a href="#vids">Videos e Conteudos</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#FAQ">Perguntas Frequentes</a></li>
+               </ul>
+            </div>
+
         </header>
 
         <div class="container description-container">
@@ -161,8 +166,7 @@
                     Cursos online gratuitos com a ajuda de uma comunidade, de pessoas dispostas a te ajudar a aprender
                     melhor e até conseguir sua primeira vaga de emprego.
                     <br><br>
-                    <a href="https://digitalinnovation.one/sign-up?ref=novofutura" target="_blank"
-                        style="text-decoration: underline">
+                    <a class="cad-but" href="#ourcourses">
                         Cadastre-se para iniciar os cursos gratuitamente
                     </a>
                 </h2>
@@ -170,18 +174,13 @@
 
             <img src="assets/Aluno.png" />
         </div>
-
-        <a class="anchor" href="#ourcourses">
-            <i class="fas fa-arrow-left"></i>
-            Conheça Nossos Cursos
-        </a>
     </section>
 
 
     <section class="courses">
         <div class="container" id="ourcourses">
             <small>Conhecimentos muito procurados por empresas da região</small>
-            <h3>Cursos selecionados</h3>
+            <h3>Trilha de cursos gratuitos</h3>
             <div class="courses-content">
 
                 <div class="courses-container"></div>
@@ -224,9 +223,59 @@
             <div class="cards">
 
                 <div class="card">
-                    <img src="/assets/companie_brow.jpeg" alt="meeta link">
+                    <img src="assets/companie_brow.jpeg" alt="meeta link">
                     <span>Meeta Solutions</span>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="videos" id="vids">
+        <div class="container">
+            <h3>Novo Futuro na Tv !</h3>
+            <div class="carrossel">
+                <ul id="autoWidth" class="cs-hidden">
+                    <!--1------------------------------>
+                    <li class="item-a">
+                        <!--slider-box-->
+                        <div class="box">
+                            <p class="marvel">Band Cidade 08/06/2020</p>
+                            <!--model-->
+                            <a href="https://www.youtube.com/watch?v=r0ZNQ-hS7Ag" target="_blank">
+                                <img class="thumb" src="https://img.youtube.com/vi/r0ZNQ-hS7Ag/0.jpg" alt="">
+                            </a>
+                            <div></div>
+                        </div>
+                    </li>
+                    <!--2------------------------------>
+                    <li class="item-a">
+                        <div class="box">
+                            <p class="marvel">Tv Vanguarda 09/06/2020</p>
+                            <!--model-->
+                            <a href="https://www.youtube.com/watch?v=QOwvk85Mb1I" target="_blank">
+                                <img class="thumb" src="https://img.youtube.com/vi/QOwvk85Mb1I/0.jpg" alt="">
+                            </a>
+                            <div></div>
+                        </div>
+                    </li>
+                    <!--3------------------------------>
+                    <li class="item-a">
+                        <div class="box">
+                            <p class="marvel">Tv Vanguarda 07/07/2020</p>
+                            <!--model-->
+                            <a href="https://www.youtube.com/watch?v=G1i6G9mzeNc&t=43s" target="_blank">
+                                <img class="thumb" src="https://img.youtube.com/vi/G1i6G9mzeNc/0.jpg" alt="">
+                            </a>
+                            <div></div>
+                        </div>
+                    </li>
+                    <!--4------------------------------>
+        
+                    <!--5------------------------------>
+        
+                    <!--6------------------------------>
+        
+                </ul>
             </div>
         </div>
     </section>
@@ -250,53 +299,7 @@
         </div>
     </section>
 
-    <section class="videos" id="vids">
-        <div class="container">
-            <h3>Nosso projeto na TV !</h3>
-
-            <div class="vid-group">
-
-                <div class="vid-card">
-                    <div class="vid">
-                        <iframe width="300" height="300" src="https://www.youtube.com/embed/r0ZNQ-hS7Ag" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                        <span>
-                            Band Cidade  <br>
-                            08 06 2020
-                        </span>
-                    </div>
-                </div>
-
-                <div class="vid-card">
-                    <div class="vid">
-                        <iframe width="300" height="300" src="https://www.youtube.com/embed/QOwvk85Mb1I" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        </iframe>
-                        
-                        <span>
-                            Jornal Vanguarda  <br>
-                            09 06 2020
-                        </span>
-                    </div>
-                </div>
-
-                <div class="vid-card">
-                    <div class="vid">
-                        <iframe width="300" height="300" src="https://www.youtube.com/embed/G1i6G9mzeNc" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        </iframe>
-
-                        <span>
-                            Jornal Vanguarda <br>
-                            07 07 2020
-                        </span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    
 
     <section class="faq" id="FAQ">
         <div class="container faq-container">
@@ -639,6 +642,7 @@
         </div>
     </div>
 
+    <script src="js/script.js" type="text/javascript"></script>
     <script src="js/modules/toggleQuestionFAQ.js"></script>
     <script src="js/main.js"></script>
 </body>

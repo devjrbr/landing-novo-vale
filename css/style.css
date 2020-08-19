@@ -216,6 +216,7 @@ header > .container {
 
 .header-logo-container img:first-child {
     margin-right: 18px;
+    position: fixed;
 }
 
 .header-menu {
@@ -262,6 +263,70 @@ header > .container {
     max-width: 454px;
 }
 
+.cad-but{
+    padding: 7px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #87c441;
+}
+
+.cad-but:hover{
+	transform: scale(1.5);
+	transition: all ease 0.5s;
+}
+
+/* MENU */
+.sidebarmenu{
+    position: relative;
+    right: 0;
+    top:100px;
+    width: 350px;
+    height: 100%;
+    display: none;
+    z-index: 9999;
+}
+
+.sidebarmenu ul{
+    list-style: none;
+    background: rgba(0, 0, 0,0.7); 
+}
+
+.sidebarmenu ul a {
+    display:block;
+    height: 100%;
+    width: 100%;
+    line-height:60px;
+    font-size: 20px;
+    color: #87c441;
+    padding: 20px ;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+}
+
+.sidebarmenu ul li:hover a{
+    padding-left:35px;
+}
+
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .sidebarmenu{
+    display: block;
+}
+
+label #but{
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    cursor: pointer;
+
+}
+
 /* Empresas e Vagas de TI */
 .companies h3{
     color: #87c441;
@@ -292,9 +357,9 @@ header > .container {
 }
 
 .companies .card:hover{
-    width: 250px;
-    height: 220px;
-    transition: .2s ease-in-out;
+    transform-style: preserve-3d;
+	transform: scale(1.02);
+	transition: all ease 0.3s;
 }
 
 .companies .card img{
@@ -317,23 +382,63 @@ header > .container {
     color: #fff;
 }
 
-.vid-group{
-    display: flex;
-    flex-direction: row;
+.carrossel{
+	width:100%;
+	height: 100vh;
+	background-color:#84be41;
+	display:flex;
+	justify-content: center;
     align-items: center;
-    flex: 20%;
+    min-height: 415px;
+    margin-top: 0;
+
 }
 
-.vid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
+
+.box{
+	width:350px;
+	height:500px;
+	background-color:#fff;
+	border-radius: 10px;
+	box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	margin: 20px 10px;
+}
+.model{
+	height: 350px;
+	max-height: 100%;
+	max-width: 100%;
 }
 
-.vid span{
-    color: #fff;
+.marvel{
+	color:#32323e;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: bebas kai;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.logo{
+	height: 60px;
+}
+.box:hover{
+	/* background-color: #17171d; */
+	transform-style: preserve-3d;
+	transform: scale(1.02);
+	transition: all ease 0.3s;
+}
+.box:hover .marvel{
+	color:#c0292b;
+	transition: all ease 0.5s;
+}
+
+.thumb{
+	width: 275px;
+	height: 275px;
 }
 
 
