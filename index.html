@@ -55,6 +55,7 @@
     <link href="assets/fontawesome/css/brands.min.css" rel="stylesheet" />
     <link href="assets/fontawesome/css/solid.min.css" rel="stylesheet" />
     <link href="assets/fontawesome/css/regular.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
 
     <!-- Facebook Pixel Code -->
     <!-- <script>
@@ -113,21 +114,9 @@
                     <div class="header-logo-container">
                         <img src="assets/novo_futuro_logo.png" width="200" alt="Novo Futuro" />
                     </div>
-
-                    <div class="header-options">
-
-                        <a href="index.html">Home</a>
-                        <a href="#ourcourses">Cursos gratuitos</a>
-                        <a href="#FAQ">Perguntas Frequentes</a>
-
-                    </div>
                 </div>
 
-                <a href="https://forms.gle/amMt6W7sSFm34FqL8" target="_blank">
-                    <button class="header-button">Cadastre-se</button>
-                </a>
-
-                <input style="height: 0; width: 0; display: none;" type="checkbox" id="hambuguer">
+                <input style="height: 0; width: 0;" type="checkbox" id="hambuguer">
 
                 <label for="hambuguer" onclick="openMenu()" id="menu-icon">
                     <i class="fas fa-bars"></i>
@@ -136,10 +125,14 @@
                 <div class="menu-mobile" id="menu-itens">
                     <a href="index.html" onclick="closeMenu()">Home</a>
                     <a href="#ourcourses" onclick="closeMenu()">Cursos gratuitos</a>
-                    <a href="#FAQ" onclick="closeMenu()">Perguntas Frequentes</a>
-                    <a href="https://forms.gle/amMt6W7sSFm34FqL8" target="_blank">
-                        <button>Cadastre-se</button>
+                    <a href="https://forms.gle/ecxfaB7JKtHByifL7" onclick="closeMenu()" target="_blank">Empresas e Vagas
+                        em TI</a>
+                    <a href="https://forms.gle/At3V7VmRwRoP9z4K9" onclick="closeMenu()" target="_blank">
+                        Banco de Talentos
                     </a>
+                    <a href="#community" onclick="closeMenu()">Comunidades</a>
+                    <a href="#novo-tv" onclick="closeMenu()">Novo Futuro na TV</a>
+                    <a href="#FAQ" onclick="closeMenu()">Perguntas Frequentes</a>
                 </div>
 
             </nav>
@@ -156,28 +149,26 @@
                     Aprenda programação sem sair de casa e inicie uma nova carreira de sucesso.
                     Cursos online gratuitos com a ajuda de uma comunidade, de pessoas dispostas a te ajudar a aprender
                     melhor e até conseguir sua primeira vaga de emprego.
-                    <br><br>
-                    <a href="https://digitalinnovation.one/sign-up?ref=novofutura" target="_blank"
-                        style="text-decoration: underline">
-                        Cadastre-se para iniciar os cursos gratuitamente
-                    </a>
                 </h2>
+
+                <div class="center">
+                    <a href="#ourcourses">
+                        <div class="button_trilhas">
+                            Trilhas de cursos gratuitos
+                        </div>
+                    </a>
+                </div>
             </div>
 
             <img src="assets/Aluno.png" />
         </div>
-
-        <a class="anchor" href="#ourcourses">
-            <i class="fas fa-arrow-left"></i>
-            Conheça Nossos Cursos
-        </a>
     </section>
 
 
     <section class="courses">
         <div class="container" id="ourcourses">
             <small>Conhecimentos muito procurados por empresas da região</small>
-            <h3>Cursos selecionados</h3>
+            <h3>Trilha de cursos gratuitos</h3>
             <div class="courses-content">
 
                 <div class="courses-container"></div>
@@ -195,20 +186,143 @@
 
 
     <section class="feature">
-        <div class="container feature-container">
+        <div class="container feature-container" id="community">
             <h2 class="feature-h2">
                 Participe da comunidade
             </h2>
             <div class="feature-paragraph">
-                <p>
-                    Clique no botão abaixo e participe do grupo de whatsapp para receber apoio da comunidade de
-                    programadores de Taubaté
-                    durante toda sua jornada de aprendizado.
-                </p>
-                <a>
-                    <button onclick="toggleModal('modal_example_5')">Entrar no grupo</button>
-                </a>
+
+                <div class="comunidades">
+                    <a href="http://campinas.tech/" target="_blank">
+                        <div class="comunidade"
+                            style="width: 300px; height:100px;background-image: url(assets/empresas/campinas.png);">
+                        </div>
+                    </a>
+                    <div class="comunidade"
+                        style="margin-left:30px;width: 100px; height:100px;background-image: url(assets/dev_jr_logo.png);"
+                        onclick="toggleModal('modal_example_5')"></div>
+                </div>
+
             </div>
+        </div>
+    </section>
+
+    <section class="tv">
+        <div class="container tv-container" id="novo-tv">
+            <h3>
+                Novo Futuro na TV
+            </h3>
+
+            <div>
+
+                <div class="owl-carousel owl-theme" id="videos-tv">
+
+                    <a href="https://globoplay.globo.com/v/8614777/" target="_blank">
+                        <div class="card">
+                            <div class="image" style="background-image: url(assets/vanguarda_01.png);">
+                            </div>
+                            <span class="tag">
+                                Entrevistas
+                            </span>
+                            <div class="box">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet
+                                </div>
+                                <div class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo vel justo
+                                    auctor
+                                    volutpat.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.youtube.com/watch?v=_LvP7bI7Agk" target="_blank">
+                        <div class="card">
+                            <div class="image" style="background-image: url(assets/live_01.jpeg);">
+                            </div>
+                            <span class="tag lives">
+                                Lives
+                            </span>
+                            <div class="box">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet
+                                </div>
+                                <div class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo vel justo
+                                    auctor
+                                    volutpat.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="assets/video_01.mp4" target="_blank">
+                        <div class="card">
+                            <div class="image" style="background-image: url(assets/video_01.png);">
+                            </div>
+                            <span class="tag videos">
+                                Vídeos
+                            </span>
+                            <div class="box">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet
+                                </div>
+                                <div class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo vel justo
+                                    auctor
+                                    volutpat.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.youtube.com/watch?v=r0ZNQ-hS7Ag" target="_blank">
+                        <div class="card">
+                            <div class="image" style="background-image: url(assets/band_01.png);">
+                            </div>
+                            <span class="tag">
+                                Entrevistas
+                            </span>
+                            <div class="box">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet
+                                </div>
+                                <div class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo vel justo
+                                    auctor
+                                    volutpat.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="assets/video_02.mp4" target="_blank">
+                        <div class="card">
+                            <div class="image" style="background-image: url(assets/video_02.png);">
+                            </div>
+                            <span class="tag videos">
+                                Vídeos
+                            </span>
+                            <div class="box">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet
+                                </div>
+                                <div class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo vel justo
+                                    auctor
+                                    volutpat.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+
+
+            </div>
+
         </div>
     </section>
 
@@ -222,6 +336,34 @@
                 <img src="assets/sergio_victor.png" class="img-parceiro" alt="parceiro" />
                 <img src="assets/dev_jr_logo.png" width="100" alt="parceiro" />
             </div>
+
+            <h3>Empresas parceiras</h3>
+
+            <div class="owl-carousel owl-theme" id="empresas">
+                <div class="empresa" style="width:200px;height:200px;background-image: url(assets/empresas/anova.jpg);">
+                </div>
+                <div class="empresa"
+                    style="width:300px;height:200px;background-image: url(assets/empresas/assecre.png);"></div>
+                <div class="empresa"
+                    style="width:200px;height:200px;background-image: url(assets/empresas/daulsys.png);"></div>
+                <div class="empresa" style="width:200px;height:200px;background-image: url(assets/empresas/dm.png);">
+                </div>
+                <div class="empresa" style="width:200px;height:50px;background-image: url(assets/empresas/exedio.png);">
+                </div>
+                <div class="empresa"
+                    style="width:230px;height:200px;background-image: url(assets/empresas/geopixel.png);"></div>
+                <div class="empresa"
+                    style="width:200px;height:200px;background-image: url(assets/empresas/hurmez.png);"></div>
+                <div class="empresa"
+                    style="width:300px;height:120px;background-image: url(assets/empresas/iclubs.png);"></div>
+                <div class="empresa"
+                    style="width:300px;height:100px;background-image: url(assets/empresas/moneto.png);"></div>
+                <div class="empresa"
+                    style="width:200px;height:200px;background-image: url(assets/empresas/solucx.png);"></div>
+                <div class="empresa"
+                    style="width:300px;height:100px;background-image: url(assets/empresas/zappts.png);"></div>
+            </div>
+
         </div>
     </section>
 
@@ -566,8 +708,10 @@
         </div>
     </div>
 
+    <script src="js/jquery.min.js"></script>
     <script src="js/modules/toggleQuestionFAQ.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/owl.carousel.js"></script>
 </body>
 
 </html>

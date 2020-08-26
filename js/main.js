@@ -160,3 +160,36 @@ function toggleModal(modalId) {
     else
         modal.style.display = "none"
 }
+
+
+$(document).ready(function () {
+    var owl = $('#videos-tv');
+    owl.owlCarousel({
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        nav: true,
+        loop: true,
+        autoWidth: true,
+        center: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+        }
+    })
+
+    var owl2 = $('#empresas');
+    owl2.owlCarousel({
+        margin: 100,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        nav: true,
+        loop: true,
+        autoWidth: true,
+        center: true,
+    })
+});

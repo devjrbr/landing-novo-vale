@@ -317,14 +317,11 @@ header > .container {
     .header-button {
         display: none;
     }
-    header > .container > label {
-        display: block !important;
-    }
 }
 
 
 header > .container > label {
-    display: none;
+    display: block;
     font-size: 44px;
     color: #87c441;
     margin-right: 16px;
@@ -487,11 +484,11 @@ header > .container > label {
 }
 
 .feature-paragraph {
-    max-width: 520px;
+    width: 100%;
     margin-left: 132px;
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
+    align-content: center;
+    align-items: center;
     line-height: 32px;
 }
 
@@ -549,6 +546,7 @@ header > .container > label {
     row-gap: 82px;
     justify-items: center;
     margin-top: 79px;
+    margin-bottom: 79px;
     justify-content: center;
     align-items: center;
 }
@@ -674,6 +672,9 @@ footer {
 
 #navbar > nav input:checked ~ #menu-itens {
     display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .menu-mobile {
@@ -700,6 +701,10 @@ footer {
     font-weight: 500;
 }
 
+.menu-mobile > a:hover {
+    text-shadow: 3px 0px 5px #000;
+}
+
 .menu-mobile > button {
     width: 166px;
     height: 44px;
@@ -716,3 +721,140 @@ footer {
     height: 44px;
     background-color: #86c156;
 }
+
+.button_trilhas {
+    background: #FFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #676666;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button_trilhas:hover {
+    opacity: 0.5;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Novo Futuro na TV */
+
+.tv {
+    display: flex;
+    background-color: #FFF;
+    width: 100%;
+    min-height: 600px;
+}
+
+.tv-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.tv h3 {
+    margin-bottom: 50px;
+}
+
+.tv .card {
+    width: 300px;
+}
+
+.tv .card:hover {
+    opacity: 0.7;
+}
+
+.tv .card .image {
+    background: #f7f7f7;
+    width: 100%;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+}
+
+.tv .card .tag {
+    padding: 5px 20px;
+    background: #84be41;
+    position: absolute;
+    margin-top: -32px;
+    color: #FFF;
+}
+
+.tv .card .box {
+    padding: 15px 20px;
+    min-height: 200px;
+    background: #f7f7f7;
+}
+
+.tv .card .title {
+    text-align: justify;
+    font-weight: bold;
+    color: #43414B;
+}
+
+.tv .card .description {
+    text-align: justify;
+    margin-top: 10px;
+    color: #43414B;
+}
+
+.lives {
+    background: #c47541 !important;
+}
+
+.videos {
+    background: #61cbd4 !important;
+}
+
+.owl-theme {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#empresas {
+    margin-top: 73px;
+    margin-bottom: 73px;
+}
+
+#empresas .empresa{
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+.comunidades {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .comunidades {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }   
+}
+
+.comunidades .comunidade {
+    background-size: 100% 100%;
+    background-position: center;
+} 
+
+.comunidades .comunidade:hover {
+    cursor: pointer;
+} 
