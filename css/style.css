@@ -478,7 +478,7 @@ header > .container > label {
 
 .feature-h2 {
     width: 247px;
-    font-size: 48px;
+    font-size: 2.9em;
     font-weight: 300;
     line-height: 62px;
 }
@@ -516,6 +516,7 @@ header > .container > label {
     .feature-h2 {
         max-width: 520px;
     }
+    
     .feature-paragraph {
         margin-top: 16px;
         margin-left: 0;
