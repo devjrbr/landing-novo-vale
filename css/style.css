@@ -474,10 +474,12 @@ header > .container > label {
     display: flex;
     align-self: center;
     color: white;
+    align-items: center;
 }
 
 .feature-h2 {
-    width: 247px;
+    width: 100%;
+    max-width: 900px;
     font-size: 2.9em;
     font-weight: 300;
     line-height: 62px;
@@ -490,6 +492,7 @@ header > .container > label {
     align-content: center;
     align-items: center;
     line-height: 32px;
+    flex-direction: column;
 }
 
 @media (max-width:930px){
@@ -812,6 +815,10 @@ footer {
     background: #61cbd4 !important;
 }
 
+.depoimentos {
+    background: #d46161 !important;
+}
+
 .owl-theme {
     display: flex;
     justify-content: center;
@@ -859,3 +866,67 @@ footer {
 .comunidades .comunidade:hover {
     cursor: pointer;
 } 
+
+/* Comunidades parceiras */
+
+.community-partners {
+    display: flex;
+    background-color: #eeeeee;
+    width: 100%;
+    min-height: 400px;
+}
+
+.community-partners-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.community-partners h3 {
+    color: #87c441;
+    font-size: 48px;
+    font-weight: 300;
+    margin-top: 16px;
+    margin-bottom: 70px;
+}
+
+.community-partners-paragraph{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .community-partners h3 {
+        margin-bottom: 30px;
+    }
+    .community-partners-paragraph{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    } 
+}
+
+.community-partners-paragraph .comunidade {
+    background-size: 100% 100%;
+    background-position: center;
+} 
+
+.community-partners-paragraph .comunidade:hover {
+    cursor: pointer;
+} 
+
+
+.button-group {
+    background: #FFF;
+    padding: 10px 20px;
+    color: #676666;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.button-group:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

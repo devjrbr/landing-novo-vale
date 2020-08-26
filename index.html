@@ -125,13 +125,13 @@
                 <div class="menu-mobile" id="menu-itens">
                     <a href="index.html" onclick="closeMenu()">Home</a>
                     <a href="#ourcourses" onclick="closeMenu()">Cursos gratuitos</a>
+                    <a href="#community" onclick="closeMenu()">Grupos de apoio</a>
                     <a href="https://forms.gle/ecxfaB7JKtHByifL7" onclick="closeMenu()" target="_blank">Empresas e Vagas
                         em TI</a>
                     <a href="https://forms.gle/At3V7VmRwRoP9z4K9" onclick="closeMenu()" target="_blank">
                         Banco de Talentos
                     </a>
-                    <a href="#community" onclick="closeMenu()">Comunidades</a>
-                    <a href="#novo-tv" onclick="closeMenu()">Novo Futuro na TV</a>
+                    <a href="#novo-tv" onclick="closeMenu()">Vídeos e Conteúdos Úteis</a>
                     <a href="#FAQ" onclick="closeMenu()">Perguntas Frequentes</a>
                 </div>
 
@@ -167,7 +167,7 @@
 
     <section class="courses">
         <div class="container" id="ourcourses">
-            <small>Conhecimentos muito procurados por empresas da região</small>
+            <small>Conhecimentos muito procurados por empresas de TI</small>
             <h3>Trilha de cursos gratuitos</h3>
             <div class="courses-content">
 
@@ -188,29 +188,60 @@
     <section class="feature">
         <div class="container feature-container" id="community">
             <h2 class="feature-h2">
-                Participe da comunidade
+                Participe de grupos de apoio ao estudo
             </h2>
             <div class="feature-paragraph">
 
-                <div class="comunidades">
-                    <a href="http://campinas.tech/" target="_blank">
-                        <div class="comunidade"
-                            style="width: 300px; height:100px;background-image: url(assets/empresas/campinas.png);">
-                        </div>
-                    </a>
-                    <div class="comunidade"
-                        style="margin-left:30px;width: 100px; height:100px;background-image: url(assets/dev_jr_logo.png);"
-                        onclick="toggleModal('modal_example_5')"></div>
+                <div class="button-group" onclick="toggleModal('modal_example_5')">
+                    Grupo Vale do Paraíba
+                </div>
+
+                <div class="button-group">
+                    Grupo Campinas (aguarde)
+                </div>
+
+                <div class="button-group">
+                    Grupo Vale do Paranapanema (aguarde)
                 </div>
 
             </div>
         </div>
     </section>
 
+    <section class="community-partners">
+        <div class="container community-partners-container" id="community-partners">
+            <h3>
+                Comunidades parceiras
+            </h3>
+            <div class="community-partners-paragraph">
+
+                <a href="http://campinas.tech/" target="_blank">
+                    <div class="comunidade"
+                        style="width: 300px; height:100px;background-image: url(assets/empresas/campinas.png);">
+                    </div>
+                </a>
+
+                <a href="http://instagram.com/devjrbr" target="_blank">
+                    <div class="comunidade"
+                        style="margin-left:30px;width: 100px; height:100px;background-image: url(assets/dev_jr_logo.png);">
+                    </div>
+                </a>
+
+                <a href="https://www.fomentavale.com.br/" target="_blank">
+                    <div class="comunidade"
+                        style="margin-left:30px;width: 200px; height:150px;background-image: url(assets/fomenta_vale.jpg);">
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
     <section class="tv">
         <div class="container tv-container" id="novo-tv">
             <h3>
-                Novo Futuro na TV
+                Vídeos e Conteúdos Úteis
             </h3>
 
             <div>
@@ -222,16 +253,17 @@
                             <div class="image" style="background-image: url(assets/vanguarda_01.png);">
                             </div>
                             <span class="tag">
-                                Entrevistas
+                                Entrevistas e Imprensa
                             </span>
                             <div class="box">
                                 <div class="title">
-                                    Lorem ipsum dolor sit amet
+                                    Formação profissional e gratuita com vagas abertas
                                 </div>
                                 <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo vel justo
-                                    auctor
-                                    volutpat.
+                                    Reportagem sobre o
+                                    crescimento de vagas abertas por empresas durante a pandemia, e apresenta o
+                                    projeto como
+                                    uma solução para capacitação de profissionais.
                                 </div>
                             </div>
                         </div>
@@ -242,16 +274,15 @@
                             <div class="image" style="background-image: url(assets/live_01.jpeg);">
                             </div>
                             <span class="tag lives">
-                                Lives
+                                Eventos Ao vivo
                             </span>
                             <div class="box">
                                 <div class="title">
-                                    Lorem ipsum dolor sit amet
+                                    Carreira em programação e TI - Desafios e Oportunidades
                                 </div>
                                 <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo vel justo
-                                    auctor
-                                    volutpat.
+                                    Evento online ao Vivo onde profissionais líderes da área de tecnologia em suas
+                                    empresas falam sobre os desafios e oportunidades na carreira de TI
                                 </div>
                             </div>
                         </div>
@@ -262,16 +293,15 @@
                             <div class="image" style="background-image: url(assets/video_01.png);">
                             </div>
                             <span class="tag videos">
-                                Vídeos
+                                Vídeo de apresentação
                             </span>
                             <div class="box">
                                 <div class="title">
-                                    Lorem ipsum dolor sit amet
+                                    Capacitação gratuita para emprego na área de TI e Programação
                                 </div>
                                 <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo vel justo
-                                    auctor
-                                    volutpat.
+                                    Gravado dentro de empresa de TI sobre as
+                                    oportunidade deste mercado que tem crescido mesmo durante a pandemia.
                                 </div>
                             </div>
                         </div>
@@ -282,16 +312,37 @@
                             <div class="image" style="background-image: url(assets/band_01.png);">
                             </div>
                             <span class="tag">
-                                Entrevistas
+                                Entrevistas e Imprensa
                             </span>
                             <div class="box">
                                 <div class="title">
-                                    Lorem ipsum dolor sit amet
+                                    Programa Novo Futuro Tech oferece formação gratuita em TI e programação
+                                    para o mercado
                                 </div>
                                 <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo vel justo
-                                    auctor
-                                    volutpat.
+                                    Apresentação em reportagem da TV Band. Veiculado no dia
+                                    08 de junho de 2020 no BAND CIDADE 1ª Edição
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.youtube.com/watch?v=P_GqEo4htBE&list=PLBpHq7IMqz8h0Xset0F5hJGtOLPh-XoRn"
+                        target="_blank">
+                        <div class="card">
+                            <div class="image" style="background-image: url(assets/entrevista_01.png);">
+                            </div>
+                            <span class="tag depoimentos">
+                                Depoimento Empresários
+                            </span>
+                            <div class="box">
+                                <div class="title">
+                                    Rodrigo Bornholdt (Zappts) - Minuto Novo
+                                    Futuro Tech
+                                </div>
+                                <div class="description">
+                                    Rodrigo Bornholdt da Zappts fala sobre as oportunidades na área de TI e Programação
+                                    e convida todos para se capacitarem para este mercado.
                                 </div>
                             </div>
                         </div>
@@ -302,16 +353,36 @@
                             <div class="image" style="background-image: url(assets/video_02.png);">
                             </div>
                             <span class="tag videos">
-                                Vídeos
+                                Vídeo de apresentação
                             </span>
                             <div class="box">
                                 <div class="title">
-                                    Lorem ipsum dolor sit amet
+                                    Conheça o Novo Futuro Tech - Programa gratuito de formação profissional online em TI
                                 </div>
                                 <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae leo vel justo
-                                    auctor
-                                    volutpat.
+                                    Existe uma área que continua crescendo mesmo durante a pandemia. Conheça e aproveite
+                                    as oportunidades do mercado de TI.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.youtube.com/watch?v=8w1e4sopA0A&list=PLBpHq7IMqz8iVt-Mb5uUGuIqcFpTjpPSf&index=3"
+                        target="_blank">
+                        <div class="card">
+                            <div class="image" style="background-image: url(assets/entrevista_02.png);">
+                            </div>
+                            <span class="tag">
+                                Entrevistas e Imprensa
+                            </span>
+                            <div class="box">
+                                <div class="title">
+                                    Empresas de TI abrem novas vagas de
+                                    emprego
+                                </div>
+                                <div class="description">
+                                    Conversa com Rodrigo proprietário da empresa Zappts, que viu seus negócios
+                                    crescerem com novos contratos e expansão da equipe durante a pandemia.
                                 </div>
                             </div>
                         </div>
@@ -329,19 +400,6 @@
     <section class="partners">
         <div class="container partners-container">
             <small>Quem faz o projeto acontecer</small>
-            <h3>Principais organizadores</h3>
-
-            <div class="logos">
-                <a href="https://digitalinnovation.one/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/parceiro.png" class="img-parceiro" alt="parceiro" />
-                </a>
-                <a href="http://sergiovictor.com.br/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/sergio_victor.png" class="img-parceiro" alt="parceiro" />
-                </a>
-                <a href="https://chat.whatsapp.com/HSXVEGLqkpn9LhnwejE94j" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/dev_jr_logo.png" width="100" alt="parceiro" />
-                </a>
-            </div>
 
             <h3>Empresas parceiras</h3>
 
@@ -368,6 +426,21 @@
                     style="width:200px;height:200px;background-image: url(assets/empresas/solucx.png);"></div>
                 <div class="empresa"
                     style="width:300px;height:100px;background-image: url(assets/empresas/zappts.png);"></div>
+            </div>
+
+
+            <h3>Principais organizadores</h3>
+
+            <div class="logos">
+                <a href="https://digitalinnovation.one/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/parceiro.png" class="img-parceiro" alt="parceiro" />
+                </a>
+                <a href="http://sergiovictor.com.br/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/sergio_victor.png" class="img-parceiro" alt="parceiro" />
+                </a>
+                <a href="https://chat.whatsapp.com/HSXVEGLqkpn9LhnwejE94j" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/dev_jr_logo.png" width="100" alt="parceiro" />
+                </a>
             </div>
 
         </div>
