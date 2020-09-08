@@ -917,6 +917,20 @@ footer {
 } 
 
 
+#community a {
+    background: #FFF;
+    padding: 10px 20px;
+    color: #676666;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#community a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .button-group {
     background: #FFF;
     padding: 10px 20px;
