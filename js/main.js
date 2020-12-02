@@ -79,7 +79,7 @@ function filterCourses(category) {
                     </div>
                     <div class="banner">
                         <h4>${course.title}</h4>
-                        <p>
+                        <p style="margin-bottom: 20px">
                             ${course.description}
                         </p>
     
@@ -101,7 +101,7 @@ function filterCourses(category) {
                     </div>
                     <div class="banner">
                         <h4>${course.title}</h4>
-                        <p>
+                        <p style="margin-bottom: 20px">
                             ${course.description}
                         </p>
     
