@@ -83,10 +83,6 @@ function filterCourses(category) {
                             ${course.description}
                         </p>
     
-                        <a class="projeto" onclick="toggleModal('${course.modal}')">
-                            <i class="far fa-file"></i>
-                            Após finalizar curso, clique aqui e faça o desafio!
-                        </a>
                         <a href="${course.link}" target="_blank">
                         <button class="${course.color}">Iniciar</button>
                         </a>
@@ -109,10 +105,6 @@ function filterCourses(category) {
                             ${course.description}
                         </p>
     
-                        <a class="projeto" onclick="toggleModal('${course.modal}')">
-                            <i class="far fa-file"></i>
-                            Após finalizar curso, clique aqui e faça o desafio!
-                        </a>
                         <a href="${course.link}" target="_blank">
                         <button class="${course.color}">Iniciar</button>
                         </a>
